@@ -213,6 +213,10 @@ private fun assembleWorkspace(): TWorkspace = workspace {
         testClass<AbstractFirUastTypesTest> {
             model("type")
         }
+
+        testClass<AbstractFirUastValuesTest> {
+            model("value")
+        }
     }
 
     testGroup("uast/uast-kotlin-fir", testDataPath = "../uast-kotlin/tests/testData") {
